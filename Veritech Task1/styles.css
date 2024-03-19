@@ -1,0 +1,107 @@
+/* Reset and Basic Styles */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #f0f0f0; /* Light grey background */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+    color: #ff00ff; /* Blue links */
+}
+
+h2{
+    text-align: center;
+    color: #333; /* Dark grey headings */
+}
+
+/* Header and Navigation */
+header{
+    width: 100%;
+    background-color: #fc50ce; /* Blue header */
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav a{
+    color: #060606; /* White navigation links */
+    margin: 0 10px;
+}
+
+/* Team Members Container */
+.team-members-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #d2d4d6; /* Light grey background for container */
+}
+
+/* Team Member Card */
+.card{
+    position: relative;
+    min-width: 250px;
+    background-color: #fff; /* White card background */
+    box-shadow: 2px 3px 30px rgba(0,0,0,0.1); /* Slightly transparent shadow */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.card img{
+    width: 90px;
+    height: 90px;
+    border-radius: 100px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: top;
+}
+
+.container h2{
+    font-weight: 500;
+    color: #141414; /* Dark grey text */
+    margin-top: 10px;
+}
+
+.title{
+    font-weight: 500;
+    color: #7a7a7a; /* Grey title text */
+    margin: 4px 0px 10px 0px;
+}
+
+.button{
+    border-radius: 20px;
+    color: #fff; /* White button text */
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    border: none;
+    background-color: #007bff; /* Blue button background */
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+
+.button:hover{
+    color: #fff;
+    box-shadow: 2px 5px 15px rgba(80,123,252,0.2); /* Slightly transparent shadow on hover */
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px){
+    .team-members-container{
+        flex-direction: column;
+    }
+}
